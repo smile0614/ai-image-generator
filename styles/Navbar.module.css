@@ -1,0 +1,131 @@
+.ai_generator_button {
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.ai_generator_button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.ai_generator_button:active {
+    color: #000
+}
+
+.ai_generator_button:active:after {
+    background: transparent;
+}
+
+.ai_generator_button:hover:before {
+    opacity: 1;
+}
+
+.ai_generator_button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.active_button_nav {
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
+
+.active_button_nav:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1; /* Always visible for the active button */
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.active_button_nav:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button_badge {
+    position: relative;
+    top: -10px; /* Adjust the vertical position of the badge */
+    right: 10px; /* Adjust the horizontal position of the badge */
+    background-color: #2a5a40d7; /* Orange background */
+    border: 2px solid #00ff7bb5; /* Orange background */
+    color: #fff; /* White text color */
+    font-size: 12px; /* Small font size for the badge */
+    font-weight: 600; /* Bold text for visibility */
+    padding: 1px 8px; /* Padding for better look */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1; /* Ensure it appears above the button */
+    white-space: nowrap; /* Prevents the badge text from breaking into multiple lines */
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1ad97667; /* Vibrant coral color */
+    color: #fff; /* White text for contrast */
+    font-size: 18px; /* Slightly larger font size for visibility */
+    font-weight: 600; /* Bold text for emphasis */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align the text */
+  }
+  
+  .banner_text strong {
+    color: #fff; /* Golden color for emphasis */
+  }
+  
+  .banner_text em {
+    font-style: italic; /* Add an italic style for 'This November Only' */
+    text-decoration: underline; /* Underline to make it stand out */
+  }

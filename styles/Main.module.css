@@ -1,0 +1,32 @@
+.main_head_text {
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    font-size: 2.3rem;
+}
+
+@media (min-width: 1024px) {
+    .main_head_text {
+        font-size: 3rem;
+    }
+}
+
+.main_head_text_span {
+    background: linear-gradient(to right, #FF1CF7, #b249f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.main_head_subtitile_text {
+    margin-top: 1rem;
+    color: rgb(218, 218, 218);
+}
+
+@media (min-width: 1024px) {
+    .main_head_subtitile_text {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}

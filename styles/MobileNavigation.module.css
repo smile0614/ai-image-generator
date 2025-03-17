@@ -1,0 +1,58 @@
+.mobile_navigation_wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    z-index: 50;
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-saturate: 150%;
+    background-color: #000000bf;
+}
+
+.mobile_navigation_button {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 5px;
+  }
+
+  .mobile_navigation_button_inner_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #414040b7; */
+    border-radius: 10px;
+    padding: 5px;
+    /* border: 2px solid red; */
+  }
+
+  .mobile_navigation_button_inner_wrapper svg {
+    color: rgb(103, 103, 103);
+    /* fill: white; */
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobile_nav_active_button_nav svg {
+    color: white;
+  }
+  
+  .mobile_navigation_button:focus {
+    outline: none;
+  }
+
+  .mobile_navigation_button_text {
+    font-size: 18px;
+  }

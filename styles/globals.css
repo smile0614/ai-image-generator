@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-top-color: #13143a;
+    --bg-bottom-color: #07020D;
+    --txt-grey-color: #A1A1AA;
+    --txt-neutral-white: #ECEDEE;
+    background-color: #000;
+}
+
+.footer-link {
+    color: var(--txt-grey-color);
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.border-green {
+    border: 2px solid green;
+}

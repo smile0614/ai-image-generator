@@ -1,0 +1,250 @@
+.discovery_image_img_hover {
+    /* border: 2px solid red; */
+    background-image: linear-gradient(360deg, rgba(15, 19, 25, 0.85), rgba(14, 14, 14, 0) 25.05%);
+}
+
+.discovery_image_container {
+    border-radius: 4px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    background: #303236;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.discovery_image_img_hover_row {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 0;
+}
+
+.discovery_image_btn_group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 6px;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+}
+
+
+.discovery_image_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .24s ease-in-out;
+    outline: none;
+    text-decoration: none;
+    font-weight: 500;
+    user-select: none;
+    font-size: 13px;
+    height: 30px;
+    min-width: 30px;
+    min-width: none;
+    /* background-color: #0000006b; */
+    color: #f7f8f8;
+    border-radius: 6px;
+}
+
+.discovery_image_btn_like:hover {
+    /* background-color: #00000035; */
+    backdrop-filter: blur(16px);
+    /* opacity: 0.8; */
+}
+
+.discovery_image_btn_like:hover svg {
+    /* background-color: #00000035; */
+    /* backdrop-filter: blur(16px); */
+    /* opacity: 0.8; */
+}
+
+.discovery_image_btn_clone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-weight: 500;
+    user-select: none;
+    font-size: 14px;
+    height: 30px;
+    min-width: 30px;
+    font-weight: 500;
+    background: linear-gradient(81.02deg, rgb(211, 63, 206) -23.47%, #8108fb 45.52%, #2a6cc9) border-box border-box;
+    transition: 0.2s;
+    border-radius: 15px;
+    padding: 0px 10px;
+    padding-bottom: 1.5px;
+    opacity: 0;
+    margin-right: 5px;
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 768px) {
+    .discovery_image_btn_clone {
+        align-self: flex-start;
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.discovery_image_img_hover:hover .discovery_image_btn_clone {
+    opacity: 1;
+}
+
+.discovery_image_container:hover .discovery_image_img_hover {
+    display: block;
+}
+
+.discovery_image_btn_clone:hover {
+    opacity: 0.8 !important;
+}
+
+.discovery_image_btn_like svg {
+    margin-left: 5px;
+    align-self: center;
+    /* border: 2px solid red; */
+}
+
+.discovery_like_count_wrapper {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    /* border: 2px solid red; */
+}
+
+.discovery_like_count {
+    display: flex;
+    font-size: 14px;
+    /* padding-bottom: 2px; */
+    /* border: 2px solid blue; */
+}
+
+.discovery_image_actions {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 7px;
+    padding: 2px 3px;
+    pointer-events: all;
+    z-index: 20;
+    background-color: #191919;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    opacity: 0.9;
+}
+
+.discovery_actions_tooltip_content {
+    background-color: #191919;
+    backdrop-filter: blur(16px);
+    opacity: 0.9;
+}
+
+.discovery_image_actions_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .24s ease-in-out;
+    outline: none;
+    text-decoration: none;
+    font-weight: 500;
+    user-select: none;
+    border: 1px solid transparent;
+    text-align: left !important;
+    padding: 6px;
+    margin: 2px 0;
+    font-size: 12px;
+    height: 26px;
+    line-height: 100%;
+    width: 100%;
+    background: none;
+    color: #f7f8f8;
+}
+
+.discovery_image_actions_btn svg{
+    margin-right: 10px;
+}
+
+.discovery_image_actions_btn:hover {
+    color: #5858e6;
+    background: rgb(193, 193, 193)
+}
+
+.discovery_tooltip_content {
+    background-color: #000000;
+    backdrop-filter: blur(16px);
+    opacity: 0.8;
+}
+
+.discovery_image_img_hover {
+    opacity: 1 !important;
+}
+
+.discovery_image_img_hover {
+    display: none;
+}
+
+.discovery_image_container:hover .discovery_image_img_hover {
+    display: block;
+}
+
+.discovery_image_container:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .discovery_image_img_hover {
+        display: block;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .discovery_image_container:hover {
+        transform: scale(1.02);
+    }
+}
+
+.discovery_image_img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.discovery_empty_tooltip_content {
+    opacity: 0;
+}
+
+.discovery_image_spinner {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+}

@@ -1,0 +1,190 @@
+.feedback__modal {
+    position: relative; /* Adjusted to relative for the modal container */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_feedback {
+    width: 420px; /* Default width for larger screens */
+    background: #18191B;    
+    border-radius: 6px;
+    box-shadow: 0 12px 24px 0 rgba(62, 64, 83, .12), 0 3px 9px 0 rgba(0, 0, 0, .03);
+    min-height: 30% !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .modal_feedback {
+        min-width: 90% !important;
+    }
+}
+
+.modal_referral {
+    width: 420px; /* Default width for larger screens */
+    height: 300px;
+    background: #18191B;      
+    border-radius: 6px;
+    box-shadow: 0 12px 24px 0 rgba(62, 64, 83, .12), 0 3px 9px 0 rgba(0, 0, 0, .03);
+}
+
+@media only screen and (max-width: 800px) {
+    .modal_referral {
+        min-width: 90% !important;
+        /* min-height: 30% !important; */
+    }
+}
+
+.modal_sm_feedback {
+    /* margin-top: 1500px; */
+    width: calc(100vw - 300px);
+    min-height: calc(100vh - 150px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #303236;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 800px) {
+    .modal_sm_feedback {
+        width: 90% !important;
+    }
+}
+
+.modal_sm_referral {
+    /* margin-top: 1500px; */
+    width: calc(100vw - 300px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #303236;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 800px) {
+    .modal_sm_referral {
+        width: 90% !important;
+    }
+}
+
+.modal_feedback_content {
+    padding: 12px 18px;
+    overflow: hidden;
+    scrollbar-width: none;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 800px) {
+    .modal_feedback_content {
+        padding: 12px 9px;
+    }
+}
+
+.modal_feedback_content__inner {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 20px 12px;
+    /* border: 2px solid blue; */
+    height: 100%;
+}
+
+.modal_feedback_socials_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+}
+
+.modal_feedback_p {
+    font-size: 18px !important;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal_feedback_stars {
+    display: flex;
+    flex-wrap: nowrap;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.modal_feedback_stars_button {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.305);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.modal_feedback_stars_button svg {
+    height: 30px;
+    width: 30px;
+}
+
+
+.modal_feedback_socials_list li {
+    color: hsla(180, 7%, 97%, .76);
+}
+
+.modal_feedback_socials_list li:hover {
+    color: #fff;
+}
+
+.checkbox-advanced {
+    /* margin: 19px 0 0; */
+}
+
+.checkbox__checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.feedback_success_message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid hsla(297, 66%, 50%, 0.05);
+    border-radius: 5px;
+    background: rgba(48, 50, 54, .5);
+    transition: .2s ease-in-out;
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.feedback_success_message:hover {
+    border: 1px solid rgba(88, 88, 230, .5);
+    background: rgba(88, 88, 230, .2);
+    transform: translateY(-1px);
+}
+
+.feedback_error_message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid hsla(0, 66%, 50%, 0.05);
+    border-radius: 5px;
+    background: rgba(176, 28, 28, 0.5);
+    transition: .2s ease-in-out;
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.feedback_error_message:hover {
+    border: 1px solid rgba(230, 88, 88, 0.5);
+    background: rgba(230, 88, 88, 0.2);
+    transform: translateY(-1px);
+}

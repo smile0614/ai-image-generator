@@ -1,0 +1,52 @@
+.image-container:hover .image_img_hover {
+    display: block;
+}
+
+.image-container:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1025px) {
+
+    .image-container:hover {
+        transform: scale(1.02);
+    }
+}
+
+.image-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    background: #303236;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.image {
+    border-radius: 20px;
+}
+
+.image_collection_description {
+    display: flex;
+    background-color: #30323642;
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+}
+
+.image_collection_name {
+    display: flex;
+    background-color: #30323642;
+    padding: 0 10px 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.image_container_checked {
+    border: 1px solid #5858e6;
+    box-shadow: 0 0 0 1px #5858e6;
+}
